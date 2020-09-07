@@ -2,14 +2,16 @@ p {
 	margin: 0;
 }
 
+.test_class {}
+
 .section{
     padding-top: 60px;
 }
 .popular{
-	margin-bottom: 40px; 
+	margin-bottom: 40px;
 }
 .popular h1{
-	text-align: center; 
+	text-align: center;
   color: #4c4d51;
   margin: 62px 0 42px 0;
 	font-size: 1.415em;
@@ -23,19 +25,19 @@ p {
 	margin: 10px;
 }
 .block4-main {
-	float: left; 
-	width:23%; 
+	float: left;
+	width:23%;
 	/* margin-right: 2.5%;  */
 }
 #last-block{
-	margin-right:0;	
+	margin-right:0;
 }
 .block4-main img {
-	display:block;	
+	display:block;
 }
 .block4-content{
-	border: 1px solid #eee; 
-	padding: 21px ; 
+	border: 1px solid #eee;
+	padding: 21px ;
 }
 .block4-content h3 {
     text-transform: uppercase;
@@ -50,7 +52,7 @@ p {
 }
 
 .block4-main p{
-    font-size: 0.625em;		
+    font-size: 0.625em;
     padding: 5px 0 10px 0;
 }
 .price-basket{
@@ -58,8 +60,8 @@ border-top: 1px solid #eee;
 padding: 10px 0;
 }
 .price{
-float: left; 
-color: #f45a40; 
+float: left;
+color: #f45a40;
 font-size: 0.875em;
 font-weight: 500;
 }
