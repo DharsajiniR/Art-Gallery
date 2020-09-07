@@ -3,19 +3,21 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
   }
-  
-  a {
-    color: #000;
-  }
-  
+
   /* header */
   
   .header {
-    background-color: #fff;
+    background-color: #860808;
+    color:#f9f1e1;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     width: 100%;
     z-index: 3;
+  }
+
+  .header a {
+    color:#f9f1e1;
+    text-transform: uppercase
   }
   
   .header ul {
@@ -23,7 +25,7 @@ body {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
   
   .header li a {
@@ -31,11 +33,13 @@ body {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    color: inherit;
   }
   
   .header li a:hover,
   .header .menu-btn:hover {
     background-color: #f4f4f4;
+    color: #000000;
   }
   
   .header .logo {
@@ -127,7 +131,7 @@ body {
       float: left;
     }
     .header li a {
-      padding: 20px 30px;
+      padding: 18px 30px;
     }
     .header .menu {
       clear: none;

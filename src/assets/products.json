@@ -14,5 +14,21 @@
         "price": 9000.00,
         "starRating": 4.2,
         "imageUrl": "assets/images/MurugaFamily.jpg"
+    },
+    {
+        "productId": 3,
+        "productName": "Lord Permumal",
+        "description": "Description will be listed soon",
+        "price": 8500.00,
+        "starRating": 4.2,
+        "imageUrl": "assets/images/Perumal.jpeg"
+    },
+    {
+        "productId": 4,
+        "productName": "Lord Hanuman",
+        "description": "Description will be listed soon",
+        "price": 8500.00,
+        "starRating": 4.2,
+        "imageUrl": "assets/images/Hanuman.jpeg"
     }
 ]

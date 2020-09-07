@@ -35,6 +35,33 @@
     font-style: normal;
     }
 
+    /* kufam-regular - latin */
+    @font-face {
+        font-family: 'Kufam';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/kufam/kufam-v2-latin-regular.eot'); /* IE9 Compat Modes */
+        src: local(''),
+            url('../fonts/kufam/kufam-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/kufam/kufam-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/kufam/kufam-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/kufam/kufam-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/kufam/kufam-v2-latin-regular.svg#Kufam') format('svg'); /* Legacy iOS */
+    }
+    /* kufam-600 - latin */
+    @font-face {
+        font-family: 'Kufam';
+        font-style: normal;
+        font-weight: 600;
+        src: url('../fonts/kufam-v2-latin-600.eot'); /* IE9 Compat Modes */
+        src: local(''),
+            url('../fonts/kufam-v2-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/kufam-v2-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/kufam-v2-latin-600.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/kufam-v2-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/kufam-v2-latin-600.svg#Kufam') format('svg'); /* Legacy iOS */
+    }
+
 body {
     font-family: 'ITCAvantGardeStd-Md','Arial' !important;
     background: #ecf0f5;
