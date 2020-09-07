@@ -1,0 +1,45 @@
+.section{
+    padding-top: 80px;
+}
+.popular{
+	margin-bottom: 40px; 
+}
+.popular h1{
+	text-align: center; 
+  color: #67686d;
+  margin: 62px 0 42px 0;
+	font-size: 1.415em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.block4-main {
+	float: left; 
+	width:23%; 
+	margin-right: 2.5%; 
+}
+#last-block{
+	margin-right:0;	
+}
+.block4-main img{
+	display:block;	
+}
+.block4-content{
+	border: 1px solid #eee; 
+	padding: 21px ; 
+}
+.block4-main p{
+    font-size: 0.625em;		
+    padding: 5px 0 10px 0;
+}
+.price-basket{
+border-top: 1px solid #eee;
+padding: 10px 0;
+}
+.price{
+float: left; 
+color: #f45a40; 
+font-size: 0.875em;
+font-weight: 500;
+}
+.basket{
+float: right;
+}

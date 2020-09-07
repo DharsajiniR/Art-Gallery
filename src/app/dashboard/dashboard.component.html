@@ -1,0 +1,48 @@
+<div>
+    <app-top-header></app-top-header>
+</div>
+<div class="section popular center-main-block clearfix">
+    <h1>Popular Poducts</h1>
+    <div class="block4-main" *ngFor='let product of products'>
+          <div class="block4-content">
+          <div class="block4-content-tall">
+              <h2><img 
+                [src]='product.imageUrl'
+                [title]='product.productName'
+                [style.width.px]='imageWidth'
+                [style.margin.px]='imageMargin'></h2>
+              <h3>{{ product.productName }}</h3>
+              <p>The Nike Tailwind Loose Women's Running Tank 
+          Top is made with sweat-wicking fabric to help you 
+          stay dry and comfortable on your run.
+              </p>
+          </div>
+            <div class="price-basket">
+                <span class="price">Rs.{{ product.price }}</span>
+                <span class="basket">
+        </span>
+          </div>
+      </div>
+  </div>
+    <!-- <div style="align:center;" *ngFor='let product of products'>
+    
+              <img 
+                   [src]='product.imageUrl'
+                   [title]='product.productName'
+                   [style.width.px]='imageWidth'
+                   [style.margin.px]='imageMargin'>
+                <br>
+                Name :{{ product.productName }}
+               <br>
+               Price :{{ product.price }}
+    </div> -->
+   
+</div>
+
+<div>
+    <app-footer></app-footer>
+</div>
+
+
+
+
