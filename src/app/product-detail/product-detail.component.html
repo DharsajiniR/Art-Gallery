@@ -1,0 +1,57 @@
+<div>
+    <app-top-header></app-top-header>
+</div>
+
+<div class="section popular center-main-block clearfix">
+    <div class="anouncement-bar">
+        <p>
+            Rathna Art is open and we're shipping. Discover the world of art. Learn More.
+        </p>
+    </div>
+    <h1 class="text_underline">Selected Product</h1>
+<!-- Image zoom -->
+<div class="grid-wrapper">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div><img class="zoom-image" alt="placeholder image" [src]="products[0].imageUrl"/>
+  </div>
+
+  <!-- content -->
+    <div class="block4-container">
+    <h3>{{products[0].productName}}</h3>
+    <p>The Nike Tailwind Loose Women's Running Tank 
+        Top is made with sweat-wicking fabric to help you 
+        stay dry and comfortable on your run.
+    </p>
+    <div class="price-basket">
+        <span class="price">₹{{ products[0].price }}</span>
+        <span class="basket"> </span>
+    </div>
+    </div>
+</div>
+
+<div>
+    <app-footer></app-footer>
+</div>

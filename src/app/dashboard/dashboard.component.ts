@@ -11,6 +11,7 @@ export class DashboardComponent implements OnInit {
  public  products: Product[] = [];
  public imageWidth = 250;
  public imageMargin = 2;
+ public data: string;
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {

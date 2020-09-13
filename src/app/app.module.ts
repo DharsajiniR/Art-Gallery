@@ -9,6 +9,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductService } from './service/product.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
+import { ShopComponent } from './shop/shop.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 @NgModule({
   declarations: [
@@ -16,16 +19,21 @@ import { ContactComponent } from './contact/contact.component';
     TopHeaderComponent,
     FooterComponent,
     DashboardComponent,
-    ContactComponent
+    ContactComponent,
+    ShopComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    NgxImageZoomModule.forRoot(),
     RouterModule.forRoot([
       { path: '', component: DashboardComponent, pathMatch: 'full' },
-      {path:'dashboard',component:DashboardComponent},
-      {path:'contact', component:ContactComponent}
+      {path:'home',component:DashboardComponent},
+      {path:'contact', component:ContactComponent},
+      {path:'shop',component:ShopComponent},
+      {path:'details/:Id', component:ProductDetailComponent}
     ])
   ],
   providers: [ProductService
