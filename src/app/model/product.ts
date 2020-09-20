@@ -5,4 +5,6 @@ export class Product {
     description: string;
     starRating: number;
     imageUrl: string;
+    totalPrice : number;
+    quantity : number;
   }

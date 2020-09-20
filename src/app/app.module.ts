@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './shop/shop.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     DashboardComponent,
     ContactComponent,
     ShopComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    AddToCartComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
       {path:'home',component:DashboardComponent},
       {path:'contact', component:ContactComponent},
       {path:'shop',component:ShopComponent},
-      {path:'details/:Id', component:ProductDetailComponent}
+      {path:'details/:Id', component:ProductDetailComponent},
+      {path:'addToCart', component : AddToCartComponent}
     ])
   ],
   providers: [ProductService

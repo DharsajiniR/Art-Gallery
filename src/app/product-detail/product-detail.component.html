@@ -1,13 +1,12 @@
 <div>
     <app-top-header></app-top-header>
 </div>
-
 <div class="section popular center-main-block clearfix">
-    <div class="anouncement-bar">
+    <!-- <div class="anouncement-bar">
         <p>
             Rathna Art is open and we're shipping. Discover the world of art. Learn More.
         </p>
-    </div>
+    </div> -->
     <h1 class="text_underline">Selected Product</h1>
 <!-- Image zoom -->
 <div class="grid-wrapper">
@@ -38,18 +37,30 @@
     <div class="grid-item"></div><img class="zoom-image" alt="placeholder image" [src]="products[0].imageUrl"/>
   </div>
 
-  <!-- content -->
-    <div class="block4-container">
-    <h3>{{products[0].productName}}</h3>
-    <p>The Nike Tailwind Loose Women's Running Tank 
+       <h3>{{products[0].productName}}</h3>
+       <p>The Nike Tailwind Loose Women's Running Tank 
         Top is made with sweat-wicking fabric to help you 
         stay dry and comfortable on your run.
-    </p>
-    <div class="price-basket">
-        <span class="price">₹{{ products[0].price }}</span>
-        <span class="basket"> </span>
-    </div>
-    </div>
+       </p>
+       <div class="price-basket">
+         <span class="price">₹{{ products[0].price }}</span>
+         <span class="basket"> </span>
+       </div>
+        <label>Frame Size : </label>
+          &nbsp;
+         <input list="frame" placeholder="Select Frame Size">
+          <datalist id="frame" class="custom-class">
+           <option value="28 in x 22 in x 2 in"></option>
+           <option value="31 in x 25 in x 2 in"></option>
+           <option value="35 in x 29 in x 2 in"></option>
+           <option value="3.5 ft x 2.5 ft x 2 in"></option>
+           <option value="4.5 ft x 3.5 ft x 2 in"></option>
+           <option value="6.8 ft x 4.8 ft x 2 in"></option>
+          </datalist>
+          &nbsp;
+        <input type="checkbox" name="Customize"> Customize 
+          &nbsp;
+        <button type="button" class="btn-red" [routerLink]="['/addToCart']"><i class="fa fa-shopping-bag"></i> Add to Cart</button>
 </div>
 
 <div>
