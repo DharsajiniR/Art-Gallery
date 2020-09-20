@@ -3,7 +3,7 @@
 </div>
 <header id="site-header">
     <div class="container">
-        <h1>Shopping cart</h1>
+        <h1 class="cart-title">My Shopping Cart <label>({{totalItemsInCartDesc}})</label></h1>
     </div>
 </header>
 
@@ -31,18 +31,21 @@
             </div>
 
             <footer class="content">
-                <span class="qt-minus" (click)="qtyDecrease(product)">-</span>
-                <span class="qt">{{product.quantity}}</span>
-                <span class="qt-plus" (click)="qtyIncrease(product)">+</span>
+                <div>
+                    <span class="qt-action-icons" (click)="qtyDecrease(product)">-</span>
+                    <span class="qt">{{product.quantity}}</span>
+                    <span class="qt-action-icons" (click)="qtyIncrease(product)">+</span>
+                </div>
 
+                <div>
+                    <h2 class="full-price">
+                        ₹{{product.totalPrice}}
+                    </h2>
+                    <h2 class="price">
+                        ₹{{product.price}}
+                    </h2>
+                </div> 
 
-                <h2 class="full-price">
-                    Rs.{{product.totalPrice}}
-                </h2>
-
-                <h2 class="price">
-                    Rs.{{product.price}}
-                </h2>
             </footer>
         </article>
 
@@ -55,14 +58,16 @@
     <div class="container clearfix">
 
         <div class="left">
-            <h2 class="subtotal">Subtotal: Rs.<span>{{total}}</span></h2>
-            <h3 class="tax">Taxes (0%): Rs.<span>0.0</span></h3>
-            <h3 class="shipping">Shipping: Rs.<span>0.00</span></h3>
+            <h2 class="subtotal">Subtotal: ₹<span>{{total}}</span></h2>
+            <h3 class="tax">Taxes (0%): ₹<span>0.0</span></h3>
+            <h3 class="shipping">Shipping: ₹<span>0.00</span></h3>
         </div>
 
         <div class="right">
-            <h1 class="total">Total: Rs.<span>{{total}}</span></h1>
-            <a class="btn">Checkout</a>
+            <h1 class="total">Total: ₹<span>{{total}}</span></h1>
+            <a class="checkout-btn">Checkout
+                <span class="arrow_right" href="#"><i class="fa fa-arrow-right checkout-icon"></i></span>
+            </a>
         </div>
 
     </div>
